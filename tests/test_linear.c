@@ -7,7 +7,7 @@
 int main( int argc, char *argv[] )  {
    
     char *str,*p;
-    unsigned int secs = 30;
+    unsigned int secs = 5;
     unsigned int timer;
     int block = 100;
 
@@ -17,6 +17,9 @@ int main( int argc, char *argv[] )  {
 
     printf("PID = %d\n",getpid());
 
+    if (block == 0){
+        block = 1;
+    }
     for(int i = 0 ; i < block; i++){
         str = (char *) malloc(1024);
     }
