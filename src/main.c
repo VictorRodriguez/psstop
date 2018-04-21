@@ -181,7 +181,6 @@ int main(int argc, char **argv)
                 return EXIT_SUCCESS;
             default:
                 print_help();
-                abort ();
         }
     }
         dir = opendir("/proc");
